@@ -41,9 +41,9 @@ comment_valine:
   appKey:
 
 comment_disqus:
-    enable: false
-    url:  # the url of your website main domain like this https://xxx.xxx/
-    name: # the short name in disqus
+  enable: false
+  url:  # the url of your website main domain like this https://xxx.xxx/
+  name: # the short name in disqus
 
 # dark
 # light
@@ -54,10 +54,10 @@ appearance: auto # Default value is auto
 favicon: images/favicon.png
 
 friend_links:
-  # - title: Google
-  #   link: https://www.google.com/
-  # - title: Github
-  #   link: https://www.github.com/
+  - title: 浩的博客
+    link: https://Ghl.info/
+  - title: 果冻の博客
+    link: https://blog.jellyqwq.top
   # - title: V2EX
   #   link: https://v2ex.com/
   # - title: Twitter
