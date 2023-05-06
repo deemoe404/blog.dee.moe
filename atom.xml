@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Phyllali&#39;s Blog</title>
+  
+  <subtitle>The white.</subtitle>
+  <link href="https://blog.phyllali.club/atom.xml" rel="self"/>
+  
+  <link href="https://blog.phyllali.club/"/>
+  <updated>2023-05-06T07:55:40.668Z</updated>
+  <id>https://blog.phyllali.club/</id>
+  
+  <author>
+    <name>Phyllali</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fix Un-allowed DMA capable bus/device(s) detected</title>
+    <link href="https://blog.phyllali.club/2021/10/09/Technology/fix-un-allowed-dma-capable-bus-devices-detected/"/>
+    <id>https://blog.phyllali.club/2021/10/09/Technology/fix-un-allowed-dma-capable-bus-devices-detected/</id>
+    <published>2021-10-09T14:41:55.000Z</published>
+    <updated>2023-05-06T07:55:40.668Z</updated>
+    
+    <content type="html"><![CDATA[<p>Windows 8 and later have a function named “Device Encryption”. It allows Windows to automatically enable BitLocker for local disks and unlock them at startup.</p><p>However, if you are using a DIY rig or have changed/added some hardware to your OEM machine, this feature might be broken. Therefore, we need to add those devices to the whitelist to re-enable the feature.</p><hr><h2 id="Whitelist-the-devices"><a href="#Whitelist-the-devices" class="headerlink" title="Whitelist the devices"></a>Whitelist the devices</h2><blockquote><p>Check for driver updates in Windows Update before doing this, because even though devices without a proper driver won’t show up in the device list, the system could detect their device ID that might not be listed in the whitelist.</p></blockquote><ol><li>Open <strong>_Reged_it</strong></li><li>Navigate to <strong><em>Computer\HKEY_LOCAL_MACHINE\SYSTEM\<br>CurrentControlSet\Control\DmaSecurity\AllowedBuses</em></strong></li><li>Grant yourself access to modify the registry key<ol><li>Right-click&nbsp;<em><strong>AllowedBuses</strong></em>&nbsp;and go to <strong><em>Permissions</em></strong></li><li>Make yourself the owner<ol><li>Press&nbsp;<em><strong>Advanced</strong></em></li><li>Next to&nbsp;<em><strong>Owner</strong></em>, make note of what it says (mine said&nbsp;<em><strong>SYSTEM</strong></em>)</li><li>Next to&nbsp;<em><strong>Owner</strong></em>, press&nbsp;<em><strong>Change</strong></em></li><li>Enter your username (eg your Microsoft account email address)</li><li>Press&nbsp;<em><strong>OK</strong></em></li></ol></li><li>Grant yourself access<ol><li>Press&nbsp;<em><strong>Add</strong></em></li><li>Enter your username (eg your Microsoft account email address)</li><li>Press&nbsp;<em><strong>OK</strong></em></li><li>Select your user</li><li>Tick&nbsp;<em><strong>Full Control</strong></em></li><li>Press&nbsp;<em><strong>OK</strong></em></li></ol></li></ol></li><li>Under&nbsp;<em><strong>AllowedBuses</strong></em>, create a new&nbsp;<em><strong>String Value</strong></em></li><li>Run the following PS script which generates a .reg file (with all found PCI devices) in tmp directory and then imports it silently</li></ol><pre><code class="powershell">$tmpfile = "$($env:TEMP)\AllowBuses.reg"'Windows Registry Editor Version 5.00[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses]'`| Out-File $tmpfile(Get-PnPDevice -InstanceId PCI* `| Format-Table -Property FriendlyName,InstanceId -HideTableHeaders -AutoSize `| Out-String -Width 300).trim() `-split "`r`n" `-replace '&amp;SUBSYS.*', '' `-replace '\s+PCI\\', '"="PCI\\' `| Foreach-Object{ "{0}{1}{2}" -f '"',$_,'"' } `| Out-File $tmpfile -Appendregedit /s $tmpfile</code></pre><p>Restart your computer and enjoy the device encryption feature!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Windows 8 and later have a function named “Device Encryption”. It allows Windows to automatically enable BitLocker for local disks and un</summary>
+      
+    
+    
+    
+    <category term="Technology" scheme="https://blog.phyllali.club/categories/Technology/"/>
+    
+    
+    <category term="Windows" scheme="https://blog.phyllali.club/tags/Windows/"/>
+    
+  </entry>
+  
+</feed>
