@@ -1,5 +1,5 @@
 ---
-title: Copy content of folder & its sub-folders recursively Using CMD
+title: Folder Content Copy Script with Filter Option
 mathjax: true
 date: 2022-06-23 21:11:21
 tags: Windows
