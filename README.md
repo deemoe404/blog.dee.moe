@@ -1,11 +1,12 @@
 # blog.phyllali.club
+
 Phyllali's blog, powered by Hexo and theme by Haojen.
 
 ---
 
 Hey there! 👋 It seems like my site has undergone some changes recently. As high VPS costs were becoming a burden, I decided to switch over to GitHub Pages, powered by Hexo. Not only is this more affordable, it also allowed me to clean up any mess that may have existed on the old site.
 
-Anyway, welcome to my not-that-fancy new site! 
+Anyway, welcome to my not-that-fancy new site!
 
 > Content below were written by GPT-3.5 🤣
 
