@@ -22,15 +22,17 @@ There are two categories of "R"s out there. One aims to provide extra content in
 
 This article will only be discussing the second category since "VR" is already quite good at utilizing desktop graphics. Since "XR" refers to "Extended Reality", what kinds of extra information it can add to our reality?
 
-## "Extra Content"
+## "Extra" Content
 
 The Hololens and Vision Pro both mention a type of assistance that their devices can provide: 3D instruction in real life. However, what about the moments when you want to sit down, relax, and contemplate your real-life needs without the sci-fi scenes they present to you?
 
+Hololens is designed for military and industrial usage, but Apple? Really? 
+
 ![sci-fi](sci-fi.png "sci-fi")
 
-Hololens is designed for military and industrial usage, but Apple? Really? I'm not saying their product is bad. To be frank, they are creating one of the best XR "headsets" available right now. It's great for entertainment purposes and can be used as a **gigantic monitor** or for "**Spatial Computing**".
+> I'm not saying Vision Pro is bad. To be frank, they are creating one of the best XR "headsets" available right now. It's great for entertainment purposes and can be used as a **gigantic monitor** or for "**Spatial Computing**".
 
-Something that can provide assistance in everyday life is more like checking the map while traveling, receiving guidance during yoga sessions, or tracking food calories throughout the day. None of these tasks could NOT be accomplished without visual feedback, right?
+But for most people, something that can provide REAL assistance in everyday life is more like checking the map while traveling, receiving guidance during yoga sessions, or tracking food calories throughout the day. None of these tasks could NOT be accomplished without visual feedback, right?
 
 ## YES...?
 
@@ -46,7 +48,7 @@ The "XR earphone" is definitely not something I mentioned initially, and compani
 
 However, I still believe that such a concept is highly useful and **feasible** in 2023.
 
-## What's More...
+## What's More
 
 The inconvenience of XR headsets primarily stems from having to wear a bulky device. However, if the "XR content" is primarily audio-based, why couldn't one simply fill your house with soundbars and cameras?
 
