@@ -1,5 +1,5 @@
 ---
-title: What XR Should Be in 2030
+title: What XR Should Be in 2023
 mathjax: true
 date: 2023-06-13 07:27:35
 tags: 
