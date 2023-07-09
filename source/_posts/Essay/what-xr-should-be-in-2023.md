@@ -55,7 +55,7 @@ AI these days is quite different from back in the days when HTC Vive was launche
 
 You might anticipate what I am about to say, right? *(merely a bluetooth earbuds with a "secretary" built inside 🤣)*
 
-The "XR earphone" is definitely not something I mentioned initially, and companies like Apple are unlikely to prioritize it since it may seem too trivial compared to the Vision Pro, which offers **much more capabilities** than a mere earphone.
+The "XR earphone" is definitely not something I mentioned originally, and companies like Apple are unlikely to prioritize it since it may seem too trivial compared to the Vision Pro, which offers **much more capabilities** than a mere earphone.
 
 > But integrating it with Siri could be interesting.
 
