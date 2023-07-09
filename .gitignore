@@ -1,4 +1,6 @@
 public/
 node_modules/
+.obsidian/
 .DS_Store
 db.json
+Template.md
