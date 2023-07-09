@@ -36,23 +36,24 @@ Hololens is designed for military and industrial usage, but Apple? Really?
 
 ![sci-fi](sci-fi.png "sci-fi")
 
-But for most people, something that can provide REAL assistance in everyday life is more like:
+For most people, something that we really do in everyday life is more like:
 
-1. checking the map while traveling
-2. receiving guidance during yoga sessions
-3. tracking food calories throughout the day
+1. Checking the map while traveling
+2. Receiving guidance during yoga sessions
+3. Tracking calories intake throughout the day
+4. Asking for help when cooking
 
 ...
 
-None of these tasks could NOT be accomplished without visual feedback, right?
+None of these tasks could NOT be done without visual instructions, right?
 
 ## The XR "Earphone"
 
 The term "XR" doesn't imply that it has to be a monitor strapped to your face. Why can't it be something more wearable and adorable, like earphones, or even with a built-in camera?
 
-AI these days is quite different from back in the days when HTC Vive was launched. AI from Facebook can perform image segmentation on objects it has never seen before, while ChatGPT can seamlessly handle NLP and network searches just like humans. We are now in a new era where computers can understand the world like never before.
+AI these days is quite different from back in the days when HTC Vive was launched. AI from Facebook can perform image segmentation on objects it has never seen before, while ChatGPT can seamlessly handle NLP and network searches just like human dose. We are now in a new era where computers can understand the world like never before.
 
-You might anticipate what I am about to say, right? (merely a bluetooth earbuds with a "secretary" built inside 🤣)
+You might anticipate what I am about to say, right? *(merely a bluetooth earbuds with a "secretary" built inside 🤣)*
 
 The "XR earphone" is definitely not something I mentioned initially, and companies like Apple are unlikely to prioritize it since it may seem too trivial compared to the Vision Pro, which offers **much more capabilities** than a mere earphone.
 
@@ -62,7 +63,7 @@ However, I still believe that such a concept is highly useful and **feasible** i
 
 ## What's More
 
-The inconvenience of XR headsets primarily stems from having to wear a bulky device. However, if the "XR content" is primarily audio-based, why couldn't one simply fill your house with soundbars and cameras?
+The inconvenience of XR headsets primarily stems from having to wear a bulky device. However, if the "XR content" is primarily audio-based, why couldn't one simply fill their house with soundbars and cameras?
 
 > "Okay, the microwave oven is set to 15min, over medium heat, and? What's next?"
 > 
