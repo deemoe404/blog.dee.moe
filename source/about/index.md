@@ -8,6 +8,6 @@ Just a node in the netvers.
 
 ### You might want to know them too...
 
-[浩的博客](https://Ghl.info/)
+[Meteor](https://Ghl.info/)
 
-[果冻の博客](https://blog.jellyqwq.top)
+[Jelly](https://blog.jellyqwq.top)
