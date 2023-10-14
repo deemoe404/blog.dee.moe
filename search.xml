@@ -106,6 +106,33 @@
     </entry>
     
     
+    
+    <entry>
+      <title>Compile Latest OpenCV on Ubuntu</title>
+      <link href="/2020/04/07/Technology/compile-latest-opencv-on-ubuntu/"/>
+      <url>/2020/04/07/Technology/compile-latest-opencv-on-ubuntu/</url>
+      
+        <content type="html"><![CDATA[<p>Compiling OpenCV can vary depending on the platform. In this demonstration, I will be using Ubuntu. However, these steps are mostly the same for any other distribution, with the only differences being the package manager and the package names.</p><h2 id="Retrieve-OpenCV-source-code"><a href="#Retrieve-OpenCV-source-code" class="headerlink" title="Retrieve OpenCV source code"></a>Retrieve OpenCV source code</h2><p>This shell command retrieve the most recent OpenCV version number from the GitHub API and store it in a shell variable for future use.</p><pre><code class="bash">vernum=$(wget -qO- -t1 -T2 "https://api.github.com/repos/opencv/opencv/releases/latest"  grep "tag_name"  head -n 1  awk -F ":" '{print $2}'  sed 's/\"//g;s/,//g;s/ //g;s/v//g')</code></pre><p>Next, download and unzip the OpenCV source code from GitHub. To avoid cluttering the working directory, it’s recommended to create a new folder specifically for the compilation process.</p><pre><code class="bash">mkdir opencv_build &amp;&amp; cd opencv_build</code></pre><pre><code class="bash">wget https://github.com/opencv/opencv/archive/refs/tags/$vernum.zipunzip $vernum.zip &amp;&amp; rm $vernum.zipwget https://github.com/opencv/opencv_contrib/archive/refs/tags/$vernum.zipunzip $vernum.zip &amp;&amp; rm $vernum.zipcd opencv-$vernum</code></pre><h2 id="Install-dependencies"><a href="#Install-dependencies" class="headerlink" title="Install dependencies"></a>Install dependencies</h2><p>Before proceeding, make sure to update your system.</p><pre><code class="bash">sudo apt update &amp;&amp; sudo apt upgrade</code></pre><p>The commands for installing the following packages include libraries that are commonly used with OpenCV, such as <strong>v4l</strong>, <strong>FFMPEG</strong>, and <strong>x264</strong>, but do not include GPU acceleration or machine learning components.</p><pre><code class="bash">sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"sudo apt install -y build-essential cmake git unzip zip\                pkg-config libavcodec-dev libavformat-dev libswscale-dev \                libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev \                libsnappy-dev libboost-all-dev libjasper-dev libdc1394-22-dev\                python3-dev python3-numpy python3-pip ffmpeg libopenblas-dev \                tesseract-ocr libtesseract-dev libprotobuf-dev libleveldb-dev \                libhdf5-serial-dev protobuf-compiler libatlas-base-dev \                libgflags-dev libgoogle-glog-dev liblmdb-dev libfaac-dev \                gfortran libgstreamer1.0-dev libatlas-base-dev libxvidcore-dev \                libpng-dev libopenexr-dev libwebp-dev \                libmp3lame-dev libtheora-dev libvorbis-dev  \                libopencore-amrwb-dev x264 v4l-utils libgdk-pixbuf2.0-dev \                manpages-dev libopencore-amrnb-dev \                libgstreamer-plugins-base1.0-dev libavresample-dev pip3 install --upgrade pipapt-get install -f</code></pre><h2 id="Configure-CMake-project"><a href="#Configure-CMake-project" class="headerlink" title="Configure CMake project"></a>Configure CMake project</h2><p>Remenber to execute all the build commands within a temporary directory. This way, if you make a mistake, you can easily delete the entire temporary folder to quickly start over.</p><pre><code class="bash">mkdir build &amp;&amp; cd build</code></pre><p>To display a list of all CMake compile options, run the following command:</p><pre><code class="bash">cmake .. -LAH</code></pre><ul><li>L List cached variables.</li><li>A Show options&nbsp;<a href="https://cmake.org/cmake/help/v3.0/command/mark_as_advanced.html">marked as advanced</a>.</li><li>H Show more helpful information about each option.</li></ul><p>Here’s an example configure command that you can use. If you’ve successfully installed the dependencies according to the previous instructions, this example cmake command should work for you.</p><pre><code class="bash">cmake -D CMAKE_BUILD_TYPE=RELEASE \        -D CMAKE_INSTALL_PREFIX=/usr/local/ \        -D OPENCV_ENABLE_NONFREE=ON \        -D OPENCV_EXTRA_MODULES_PATH=~/opencv_build/opencv_contrib-$vernum/modules \        -D OPENCV_GENERATE_PKGCONFIG=YES \        -D WITH_QT=OFF \        -D WITH_OPENGL=OFF \        -D WITH_CUDA=OFF \        -D BUILD_EXAMPLES=ON \        -D INSTALL_PYTHON_EXAMPLES=ON \        -D INSTALL_C_EXAMPLES=ON ..</code></pre><p>If you find it overwhelming to deal with extensive text in the command line and have a GUI installed on your machine, consider trying tools like <strong><code>ccmake</code></strong> and <strong>cmake-gui</strong> for a more user-friendly experience.</p><h2 id="Compile"><a href="#Compile" class="headerlink" title="Compile"></a>Compile</h2><p>We’ve completed the necessary steps, and now it’s in the hands of your CPUs. The <strong>-j</strong> flag specifies how many threads will be used for compilation, and it should not exceed the number of CPU cores you have.</p><pre><code class="bash">make -j6</code></pre><p>If the compilation process proceeds without errors, you can proceed with the installation by simply running this single line of code:</p><pre><code class="bash">make install</code></pre><p>At this point, CMake should be able to detect the OpenCV library files.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Technology </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+            <tag> OpenCV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
