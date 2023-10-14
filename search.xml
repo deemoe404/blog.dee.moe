@@ -56,6 +56,33 @@
     
     
     <entry>
+      <title>Localhost Issue in WSL2</title>
+      <link href="/2021/10/15/Technology/localhost-issue-in-wsl2/"/>
+      <url>/2021/10/15/Technology/localhost-issue-in-wsl2/</url>
+      
+        <content type="html"><![CDATA[<p>I was trying to build a remote debugger for an embedded device when I have no access to a physical device, so I decided to give Docker (with WSL2 backend) a try.</p><p>As the project design, 9090 UDP port should be used to communicate with host and slave, but localhost and 127.0.0.1 isn’t seems to be working in the Docker container.</p><p>After hours of searching and trying, <strong>I finally confirm that the issue is because of WSL 2, but Docker.</strong> To get the “localhost” of the Docker host (which means the WSL here), you have to run this command at PowerShell as administrator.</p><pre><code class="powershell">wsl -e ip -4 addr show dev eth0</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Technology </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> WSL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Fix Un-allowed DMA capable bus/device(s) detected</title>
       <link href="/2021/10/09/Technology/fix-un-allowed-dma-capable-bus-devices-detected/"/>
       <url>/2021/10/09/Technology/fix-un-allowed-dma-capable-bus-devices-detected/</url>
