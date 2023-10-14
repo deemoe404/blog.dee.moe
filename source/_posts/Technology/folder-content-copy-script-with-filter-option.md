@@ -5,6 +5,7 @@ date: 2022-06-23 21:11:21
 tags: Windows
 categories: Technology
 ---
+
 This script is designed to copy the contents of a folder, including sub-folders, to a new destination path. The user is prompted to enter the source path, the destination path, and a filter word to exclude certain files based on their names.
 
 ```CMD
