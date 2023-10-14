@@ -8,11 +8,11 @@ tags:
 categories: Technology
 ---
 
-I was trying to build a remote debugger for an embedded device when I have no access to a physical device, so I decided to give Docker (with WSL2 backend) a try.
+I was attempting to build a remote debugger for an embedded device when I had no access to a physical device. As a solution, I decided to try using Docker (with the WSL2 backend).
 
-As the project design, 9090 UDP port should be used to communicate with host and slave, but localhost and 127.0.0.1 isn't seems to be working in the Docker container.
+In the project's design, the 9090 UDP port was supposed to be used for communication between the host and the slave. However, it appeared that using 'localhost' or '127.0.0.1' didn't work within the Docker container.
 
-After hours of searching and trying, **I finally confirm that the issue is because of WSL 2, but Docker.** To get the "localhost" of the Docker host (which means the WSL here), you have to run this command at PowerShell as administrator.
+After hours of searching and experimentation, I finally confirmed that the issue was due to WSL 2, rather than Docker itself. To access the 'localhost' of the Docker host, which in this case refers to WSL, you need to run the following command in PowerShell with administrator privileges.
 
 ```powershell
 wsl -e ip -4 addr show dev eth0
