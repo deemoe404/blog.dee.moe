@@ -100,6 +100,18 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 If you find it overwhelming to deal with extensive text in the command line and have a GUI installed on your machine, consider trying tools like **`ccmake`** and **cmake-gui** for a more user-friendly experience.
 
+> You can also check an existed OpenCV build what compile flags are used by a function built into OpenCV. In C++ it looks like this:
+>
+> ```C++
+> cv::getBuildInformation()
+> ```
+>
+> In Python:
+>
+> ```Python
+> cv2.getBuildInformation()
+> ```
+
 ## Compile
 
 We've completed the necessary steps, and now it's in the hands of your CPUs. The **-j** flag specifies how many threads will be used for compilation, and it should not exceed the number of CPU cores you have.
