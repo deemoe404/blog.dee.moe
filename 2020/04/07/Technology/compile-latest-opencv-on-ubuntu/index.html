@@ -181,6 +181,14 @@ apt-get install -f
         -D INSTALL_C_EXAMPLES=ON ..
 </code></pre>
 <p>If you find it overwhelming to deal with extensive text in the command line and have a GUI installed on your machine, consider trying tools like <strong><code>ccmake</code></strong> and <strong>cmake-gui</strong> for a more user-friendly experience.</p>
+<blockquote>
+<p>You can also check an existed OpenCV build what compile flags are used by a function built into OpenCV. In C++ it looks like this:</p>
+<pre><code class="C++">cv::getBuildInformation()
+</code></pre>
+<p>In Python:</p>
+<pre><code class="Python">cv2.getBuildInformation()
+</code></pre>
+</blockquote>
 <h2 id="Compile"><a href="#Compile" class="headerlink" title="Compile"></a>Compile</h2><p>We’ve completed the necessary steps, and now it’s in the hands of your CPUs. The <strong>-j</strong> flag specifies how many threads will be used for compilation, and it should not exceed the number of CPU cores you have.</p>
 <pre><code class="bash">make -j6
 </code></pre>
