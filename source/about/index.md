@@ -11,3 +11,5 @@ Just a node in the netvers.
 [Meteor](https://Ghl.info/)
 
 [Jelly](https://blog.jellyqwq.top)
+
+[Quantum Cookie](https://www.quantumcookie.xyz)
