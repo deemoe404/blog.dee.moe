@@ -1,3 +1,3 @@
-# blog.phyllali.club
+# dee.moe
 
-Phyllali's blog, powered by Hexo and theme by Haojen.
+deemoe's blog, powered by Hexo and theme by Haojen.
