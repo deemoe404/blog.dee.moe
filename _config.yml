@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Phyllali's Blog
-subtitle: The white.
+title: deemoe's journal
+subtitle: 眼见何事，情系何处，身在何方，心思何人
 description: ''
 keywords:
-author: Phyllali
+author: deemoe
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.phyllali.club
+url: https://dee.moe
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
