@@ -60,7 +60,7 @@
       <link href="/2022/06/12/Creation/rmcv/"/>
       <url>/2022/06/12/Creation/rmcv/</url>
       
-        <content type="html"><![CDATA[<p>This project is a library for RoboMaster computer vision based on OpenCV. The functions that currently implemented includes:</p><ul><li>DaHeng industrial camera driver</li><li>Image preprocessing</li><li>Pattern matching for light blob and armour</li><li>Serial port communication</li><li>Gravity compensation</li></ul><p><img src="/2022/06/12/Creation/rmcv/rmcv.jpeg" alt="practical_training" title="Practical Training"></p><p><a href="https://github.com/deemoe404/rmcv">rmcv</a></p>]]></content>
+        <content type="html"><![CDATA[<p>This project is a library for RoboMaster computer vision based on OpenCV. The functions that currently implemented includes:</p><ul><li>DaHeng industrial camera driver</li><li>Image preprocessing</li><li>Pattern matching for light blob and armour</li><li>Serial port communication</li><li>Gravity compensation</li></ul><p><img src="/2022/06/12/Creation/rmcv/rmcv.jpeg" alt="practical_training" title="Practical Training"></p><p>Source Code: <a href="https://github.com/deemoe404/rmcv">rmcv on Github</a></p>]]></content>
       
       
       <categories>
