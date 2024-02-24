@@ -1,7 +1,7 @@
 # main menu navigation
 menu:
   Home: /
-  Gallery: /tags/Gallery
+  Gallery: /categories/Creation
   About: /about
   Archive: /archives
 
