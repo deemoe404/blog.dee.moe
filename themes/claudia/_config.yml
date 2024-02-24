@@ -1,6 +1,7 @@
 # main menu navigation
 menu:
   Home: /
+  Gallery: /gallery
   About: /about
   Archive: /archives
 
