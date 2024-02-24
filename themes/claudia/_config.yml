@@ -55,10 +55,10 @@ appearance: auto # Default value is auto
 favicon: images/favicon.jpg
 
 friend_links:
-  - title: V2EX
-    link: https://v2ex.com/
-  - title: Twitter
-    link: https://twitter.com/
+  # - title: V2EX
+  #   link: https://v2ex.com/
+  # - title: Twitter
+  #   link: https://twitter.com/
 
 # Google Analytics
 ga_track_id:
