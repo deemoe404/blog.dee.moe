@@ -1,7 +1,7 @@
 ---
 title: Gallery
 date: 2024-02-24 15:37:56
-layout: post
+layout: gallery
 ---
 
 test page
