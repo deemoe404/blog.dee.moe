@@ -19,4 +19,4 @@ This project is a library for RoboMaster computer vision based on OpenCV. The fu
 
 ![practical_training](rmcv.jpeg "Practical Training")
 
-[rmcv](https://github.com/deemoe404/rmcv)
+Source Code: [rmcv on Github](https://github.com/deemoe404/rmcv)
