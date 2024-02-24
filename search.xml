@@ -56,6 +56,35 @@
     
     
     <entry>
+      <title>rmcv - Computer Vision Library for Robomaster</title>
+      <link href="/2022/06/12/Creation/rmcv/"/>
+      <url>/2022/06/12/Creation/rmcv/</url>
+      
+        <content type="html"><![CDATA[<p>This project is a library for RoboMaster computer vision based on OpenCV. The functions that currently implemented includes:</p><ul><li>DaHeng industrial camera driver</li><li>Image preprocessing</li><li>Pattern matching for light blob and armour</li><li>Serial port communication</li><li>Gravity compensation</li></ul><p><img src="/2022/06/12/Creation/rmcv/rmcv.jpeg" alt="practical_training" title="Practical Training"></p><p><a href="https://github.com/deemoe404/rmcv">rmcv</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Creation </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Robomaster </tag>
+            
+            <tag> Computer Vision </tag>
+            
+            <tag> OpenCV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Localhost Issue in WSL2</title>
       <link href="/2021/10/15/Technology/localhost-issue-in-wsl2/"/>
       <url>/2021/10/15/Technology/localhost-issue-in-wsl2/</url>
@@ -108,31 +137,6 @@
     
     
     <entry>
-      <title>test</title>
-      <link href="/2021/06/16/Creation/test/"/>
-      <url>/2021/06/16/Creation/test/</url>
-      
-        <content type="html"><![CDATA[<h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> Creation </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Windows 11 &amp; Forgy</title>
       <link href="/2021/06/16/Essay/windows11-and-frogy/"/>
       <url>/2021/06/16/Essay/windows11-and-frogy/</url>
@@ -174,9 +178,9 @@
       
         <tags>
             
-            <tag> Ubuntu </tag>
-            
             <tag> OpenCV </tag>
+            
+            <tag> Ubuntu </tag>
             
         </tags>
       
