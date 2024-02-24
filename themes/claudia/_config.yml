@@ -52,7 +52,7 @@ comment_disqus:
 appearance: auto # Default value is auto
 
 # Miscellaneous
-favicon: images/favicon.png
+favicon: images/favicon.jpg
 
 friend_links:
   # - title: V2EX
