@@ -1,7 +1,7 @@
 # main menu navigation
 menu:
   Home: /
-  Gallery: /gallery
+  Gallery: /categories/Essay
   About: /about
   Archive: /archives
 
