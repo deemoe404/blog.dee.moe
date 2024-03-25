@@ -13,3 +13,5 @@ Just a node in the netvers.
 [Jelly](https://blog.jellyqwq.top)
 
 [Quantum Cookie](https://www.quantumcookie.xyz)
+
+[LeZi](https://leziblog.com)
