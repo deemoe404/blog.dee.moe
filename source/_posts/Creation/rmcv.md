@@ -19,11 +19,14 @@ This project is a library for RoboMaster computer vision based on OpenCV. The fu
 - Serial port communication
 - Gravity compensation
 
-![practical_training](rmcv.jpeg "Practical Training")
+- SVM for object classification and tracking
+- Kalman Filter for movement prediction
+
+![practical_training](rmcv_2.mov "Practical Training")
 
 ![practical_training](rmcv.mov "Practical Training")
 
-> The movement prediction in this video is based on a simple Kalman Filter running on STM32 lower computer.
+> The movement prediction in this video is based on a simple Kalman Filter running on STM32 lower computer, since the project is still in progress at the time.
 
 Source Code: [rmcv on Github](https://github.com/deemoe404/rmcv)
 
