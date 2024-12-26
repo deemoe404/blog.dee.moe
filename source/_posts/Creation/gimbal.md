@@ -11,6 +11,8 @@ categories: Creation
 
 ![Gimbal](Large.jpeg "Gimbal")
 
+> This article is still under construction. The final version will be released in the near future.
+
 ## Abstract
 
 This study presents a design method for a brushless DC (BLDC) motor gimbal system that employs a proportional-integral-derivative (PID) control algorithm for target tracking. The system consists of a 2804-100kv BLDC motor, an AS5600 magnetic encoder, and an ESP32 microcontroller, and is integrated with an industrial camera and a PC for target recognition. The system exhibits adaptability, accuracy, and efficiency. The basic structure and control principles of the gimbal system are initially introduced, followed by a system identification procedure that utilizes the system's response to a sinusoidal signal. The results obtained from modeling, simulation, and experiments are analyzed and discussed.
