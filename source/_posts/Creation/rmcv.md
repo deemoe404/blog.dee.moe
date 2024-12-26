@@ -20,3 +20,7 @@ This project is a library for RoboMaster computer vision based on OpenCV. The fu
 ![practical_training](rmcv.jpeg "Practical Training")
 
 Source Code: [rmcv on Github](https://github.com/deemoe404/rmcv)
+
+## Recent Updates
+
+- Aug 24, 2024: Added foundation for Movement Prediction, including a simple Kalman Filter and Object Classification/Tracking using SVM.
