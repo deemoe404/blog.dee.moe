@@ -7,7 +7,7 @@ tags:
   - Computer Vision
   - Few-shot Learning
   - Neural Network
-categories: Creation
+categories: Technology
 ---
 
 > This article is still under construction. The final version will be released in the near future.
