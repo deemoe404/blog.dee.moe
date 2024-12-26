@@ -7,4 +7,6 @@ tags:
 categories: Creation
 ---
 
+![Plastikos](Large.jpeg "Plastikos")
+
 > This article is still under construction. The final version will be released in the near future.
