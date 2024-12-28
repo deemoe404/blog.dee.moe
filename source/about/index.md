@@ -4,7 +4,7 @@ date: 2023-05-1 10:05:56
 layout: about
 ---
 
-Just a node in the netvers.
+A cat who lived long enough.
 
 ### You might want to know them too...
 
